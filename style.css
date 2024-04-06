@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+h1{
+    color: rgb(255, 140, 0);
+}
+/*-------------hearder...................--*/
+header{
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image: url(images/block3.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    animation:header_animate 10s ease-in-out 0s normal infinite;
+}
+
+@keyframes header_animate{
+    0%{ background-image: url(images/block3.jpg);background-position:100% 100%;}
+   25%{ background-image: url(images/block3.jpg); background-position:10% 100%;}
+   50%{ background-image: url(images/block3.jpg);background-position:100% 10% ;}
+   100%{ background-image: url(images/block3.jpg);background-position: 100% 100%  ;}
+}
+
+
+
+
+nav{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: large;
+    font-style: bold;
+     
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 30px;
+    text-shadow: 1px 1px 0 #fd6d25, 2px 2px 0  #fd6d25;
+}
+
+nav:hover{
+    background-color: rgb(15, 82, 15);
+}
+
+a:hover{
+    color:#fff;
+    text-shadow: none;
+}
+
+#nav-btn{
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px auto auto 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: xx-large;
+}
+
+
+.hotel_name{
+    width: fit-content;
+    margin: 10%;
+    text-align: center;
+    }
+
+.hotel_name h1{
+    line-height: 70px;
+     font-size:80px;
+   /* background-image: url(images/block1.jpg);
+    color:transparent;
+    background-position: 70% 100%;
+    position: relative;
+     -webkit-background-clip: text;
+       animation: hotelname 2s alternate infinite;*/
+    -webkit-text-stroke: 1px #fff;
+    font-weight: bold;
+    color: rgb(20, 118, 20);
+    text-shadow: 2px 2px 0 #fd6d25, 3px 3px 0  #fd6d25, 4px 4px 0  #fd6d25;
+
+   }
+
+   @keyframes hotelname {
+    100%{
+      background-position:1000px 0 ;
+  }
+   }
+
+ button{
+    background-color:  #fd6d25;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px 1px  20px 0;
+    font-size: large;
+}
+
+.hotel_name button:hover{
+    opacity: 0.5;
+}
+
+
+/*----------sections.........*/
+section{
+    margin: auto;
+    text-align: center;
+   /* top: 20px;
+    bottom: 20px;*/
+    position: relative;
+    background-color: rgb(19, 84, 4);
+    height: auto;
+    color: #fff;
+}
+
+.row{
+     height: fit-content;
+    margin: 1px 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*to make sure space is betwwen the columns */
+    flex-wrap: wrap;
+  
+}
+
+.column {
+    color: #fff;
+    width: 100%;
+    height:fit-content;
+    margin: 15px; /*space in column*/
+    flex: 1;
+  padding: 5px;
+/*border: 1px solid #fff;*/
+  text-align: justify;
+  border-radius: 16px;
+
+  text-align: center;
+}
+
+#big-column{
+    color: #fff;
+    flex:1.3; /*nake column ocupy twice as the other*/
+     background-image: none;
+    border:none;
+    background-color: rgb(19, 84, 4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: start;
+    padding: 30px;
+    font-weight:bold ;
+    line-height: normal;
+}
+
+#animate{
+animation:example 8s ease-in-out 0s normal infinite;
+ font-size:50px;
+ 
+}
+
+.column img{
+    border-radius: 15px;
+    width: 70%;
+    height:220px;
+}
+
+
+@keyframes example{
+    0%{ background-image: url(images/k10.jpg);background-position:-400px 0;}
+   25%{ background-image: url(images/k4.jpg); background-position:100% 100%;}
+   50%{ background-image: url(images/k6.jpg);background-position:100% 100% ;}
+   75%{ background-image: url(images/f2-removebg-preview.png);background-position:100% 100% ;}
+   100%{ background-image: url(images/j1.jpg);background-position: 700px 0  ;}
+}
+
+/*......dropdown div home page..............*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color:  rgb(255, 116, 9);
+    width:100%;
+    color: #fff;
+  
+  
+  }
+  
+  .hidden-content{
+    display:none;
+    background-color: rgb(19,84,4);
+    position:relative;
+    width: 100%;
+    height:fit-content;
+    box-shadow: 0px 8px 16px 0px  rgb(255, 116, 9);
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px;
+ 
+  
+  }
+  
+  .dropdown:hover .hidden-content{
+  display: block;
+  color: #fff;
+  }
+
+
+
+
+
+/*free ofer section*/
+
+#offerservices{
+    background-image: url(images/pool.png);
+
+}
+
+#offerservices img{
+    box-shadow: 6px 5px 5px #fff;
+}
+ 
+ 
+
+/* Footer styles */
+footer {
+    background-color: rgb(13, 84, 13);
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    height: 100px;
+    text-align: center;
+}
+.footer-links {
+ width: 100%;
+   
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    
+   float: inline-start;
+   font-size: small;
+
+  
+   
+}
+
+.footer-links a:hover {
+    color: #cccccc;
+}
+
+
